@@ -148,10 +148,10 @@ namespace Latypova
 
             for (int i = 0; i < grandfathers.Length; i++)
             {
-                int blackEyes = grandfathers[i].CheckBadWords(badWords);
+                int badWordsCount = grandfathers[i].CheckBadWords(badWords);
 
                 Console.WriteLine(
-                    $"{grandfathers[i].Name}: фингалов = {blackEyes}");
+                    $"{grandfathers[i].Name}: фингалов = {badWordsCount}");
             }
         }
 
